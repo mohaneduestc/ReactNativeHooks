@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import React, { Component } from 'react'
+import { View, Text, StyleSheet, Image } from 'react-native'
 
-const ImageDetails = (props) =>{
-    console.log(props)
-    return(
-        <View>
-            <Image source={props.imageSource} />
-            <Text>{props.title}</Text>
-        </View>
-    )
+const ImageDetails = ({ imageSource, title, score }) => {
+  // console.log(props)
+  return (
+    <View>
+      <Image source={imageSource} />
+      <Text>{title}</Text>
+      <Text>Image Scroe - {score}</Text>
+    </View>
+  )
 }
 
-export default ImageDetails;
+export default ImageDetails
