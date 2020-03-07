@@ -1,6 +1,8 @@
 import React from 'react';
-import HomeScreen from './src/HomeScreen';
-import ComponentScreen from './src/ComponentScreen';
+import HomeScreen from './src/screen/HomeScreen';
+import ComponentScreen from './src/screen/ComponentScreen';
+import ListScreen from './src/screen/ListScreen';
+import ImageScreen from './src/screen/ImageScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { enableScreens } from 'react-native-screens';
@@ -23,6 +25,12 @@ function MyStack() {
       <Stack.Screen 
         name="Component" 
         component={ComponentScreen} />
+      <Stack.Screen 
+        name="List" 
+        component={ListScreen} />
+      <Stack.Screen 
+        name="Image" 
+        component={ImageScreen} />
     </Stack.Navigator>
   );
 }
