@@ -7,6 +7,7 @@ import CounterScreen from './src/screen/CounterScreen'
 import ColorScreen from './src/screen/ColorScreen'
 import SqureScreen from './src/screen/SqureScreen'
 import TextScreen from './src/screen/TextScreen'
+import BoxScreen from './src/screen/BoxScreen'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { enableScreens } from 'react-native-screens'
@@ -30,6 +31,7 @@ function MyStack() {
       <Stack.Screen name="Color" component={ColorScreen} />
       <Stack.Screen name="Sqaure" component={SqureScreen} />
       <Stack.Screen name="Text" component={TextScreen} />
+      <Stack.Screen name="Box" component={BoxScreen} />
     </Stack.Navigator>
   )
 }
