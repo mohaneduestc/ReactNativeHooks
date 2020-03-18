@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SearchScreen from './src/screens/SearchScreen'
 import ResultsShowScreen from './src/screens/ResultsShowScreen'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { enableScreens } from 'react-native-screens'
+import { ScreenOrientation } from 'expo'
 enableScreens()
+const Stack = createStackNavigator();
 
-const Stack = createStackNavigator()
 
 function MyStack() {
   return (
-    <Stack.Navigator initialRouteName="Search">
+    <Stack.Navigator
+      initialRouteName="Search"
+      screenOptions={{
+        gestureEnabled: true
+      }}>
       <Stack.Screen
         name="Search"
         component={SearchScreen}
@@ -31,3 +36,4 @@ export default function App() {
     </NavigationContainer>
   )
 }
+
