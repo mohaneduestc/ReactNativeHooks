@@ -6,9 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { enableScreens } from 'react-native-screens'
 import { ScreenOrientation } from 'expo'
 enableScreens()
+const Stack = createStackNavigator();
 
-
-const Stack = createStackNavigator()
 
 function MyStack() {
   return (
@@ -37,3 +36,4 @@ export default function App() {
     </NavigationContainer>
   )
 }
+
