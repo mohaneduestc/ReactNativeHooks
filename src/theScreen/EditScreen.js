@@ -4,7 +4,7 @@ import { Context } from '../context/BlogContext'
 import BlogPostForm from '../components/BlogPostForm'
 
 const EditScreen = ({ route , navigation}) => {
-  console.log(navigation)
+  // console.log(navigation)
   const { id } = route.params
   const { state, editBlogPost } = useContext(Context)
 
